@@ -1,0 +1,43 @@
+<body>
+  <div class="container">
+    <button (click)="irAMatch()" class="btnVolver">
+      <div class="text">Volver</div>
+    </button>
+    <label class="titulo">Tu Equipo</label>
+    <button class="delete-team">Eliminar Equipo</button>
+
+    <div class="middle-text">Edita tu equipo</div>
+    <hr class="line" />
+
+    <button class="delete-player">Eliminar Jugador</button>
+    <input
+      type="text"
+      placeholder="Número de Teléfono a Eliminar"
+      id="phoneToDelete"
+    />
+
+    <button class="add-player">Agregar Jugador</button>
+    <input
+      type="text"
+      placeholder="Número de Teléfono del Nuevo Jugador"
+      id="phoneToAdd"
+    />
+    <hr class="line" />
+    <h2>Lista de Jugadores</h2>
+    <table class="players-table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Teléfono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí se mostrarán los datos de los jugadores -->
+      </tbody>
+    </table>
+
+    <h2>Edad Promedio del Equipo</h2>
+    <p id="average-age"><!-- Aquí se mostrará la edad promedio --></p>
+  </div>
+</body>

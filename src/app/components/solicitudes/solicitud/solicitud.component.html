@@ -1,0 +1,15 @@
+<form (ngSubmit)="realizarSolicitud()">
+  <label for="dia">Día:</label>
+  <input type="text" id="dia" name="dia" [(ngModel)]="dia" required>
+
+  <label for="telefono">Teléfono:</label>
+  <input type="text" id="telefono" name="telefono" [(ngModel)]="telefono" required>
+
+  <label for="horario">Horario:</label>
+  <input type="text" id="horario" name="horario" [(ngModel)]="horario" required>
+
+  <button type="submit">Realizar Solicitud</button>
+</form>
+
+<!-- Agregar un botón o enlace para cancelar la solicitud -->
+<button type="button" (click)="cancelarSolicitud()">Cancelar Solicitud</button>
